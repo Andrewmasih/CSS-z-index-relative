@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>z-index</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        position: relative;
+      }
+
+      .red {
+        background-color: #e84610;
+        z-index: 2;
+      }
+
+      .blue {
+        background-color: #0799d3;
+        top: -50px;
+        /* Change the z-index 
+        to a number higher than 2 
+        and see what happens */
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="red"></div>
+    <div class="blue"></div>
+  </body>
+</html>
